@@ -51,7 +51,6 @@ html{
 	background: none;
 	border: 0;
 	box-sizing: border-box;
-	margin: 1em;
 	padding: 1em 2em;
 	position: relative;
 	font-size:3.6rem;
@@ -61,11 +60,10 @@ html{
 	top:0;
 	font-weight: 700;
 	vertical-align: middle;
-	
   }
   .SecondSlogan
   {
-	  padding-top:90px;
+	margin-top:3vh;
 	font-size:3rem;
 	color:white;
 	text-shadow:0 2px 6px black;
@@ -108,15 +106,11 @@ html{
 	border-left-color: white;
 	transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 	}
-	.AboutMe__div
-	{
-		margin-top:6rem;
-	}
-	.AboutMe--h2
+	.Motto
 	{
 		padding:30px;
 		font-size:3.6rem;
-		font-family: 'Open Sans', sans-serif;
+		margin-bottom:2rem;
 	}
 	.AboutMe__div--p
 	{
@@ -142,7 +136,7 @@ html{
 	.AboutMe__div
 	{
 		border-bottom:1px solid #d2b583;
-		padding:20px;
+	
 		padding-bottom:30px;
 	}
 	.Sessions--h2
@@ -200,11 +194,59 @@ html{
 		margin:0 auto;
 		transition:400ms;
 	}
-	footer{
-		padding:30px;
-	}
-	.footer--span
+	.footer--span-author
 	{
-		color:white;
+		
 		font-size:2.34rem;
+	}
+	.Links
+	{
+		font-size:4rem;
+		display:flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.Link--i-mail
+	{
+		color:#d2b583;
+	}
+	.Links a
+	{
+		color:black;
+	}
+	.Link--i-fb
+	{
+		color:#4267b2;
+	}
+	.Links a
+	{
+		transition: 500ms;
+	}
+	.Links a:hover{
+		transform:scale(1.3);
+	}
+	@media screen and (max-width:715px){
+		.MainSlogan
+		{
+			font-size:2.4rem;
+		}
+		.SecondSlogan
+		{
+			font-size:1.98rem;
+		}
+	}
+	@media screen and (max-width:486px){
+		.MainSlogan
+		{
+			font-size:1.48rem;
+		}
+		.SecondSlogan
+		{
+			font-size:1.386rem;
+		}
+		.MainSlogan::before, .MainSlogan::after
+		{
+			border-width:4px;
+		}
 	}
