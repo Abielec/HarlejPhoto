@@ -136,13 +136,19 @@ html{
 	.AboutMe__div
 	{
 		border-bottom:1px solid #d2b583;
-	
 		padding-bottom:30px;
+	}
+	.AboutMe__div{
+		position:relative;
 	}
 	.Sessions--h2
 	{
 		text-transform: uppercase;
 		font-size:3rem;
+		color:white;
+		font-family:lato;
+		font-weight:bold;
+		text-shadow:0 0 4px white;
 		padding:30px;
 	}
 	.Sessions__div__article__header--img
@@ -157,7 +163,7 @@ html{
 	{
 		font-size:2.5rem;
 		border:1px solid rgba(210, 181, 131,0.4);
-	  font-family: 'Open Sans', sans-serif;
+	    font-family: 'Open Sans', sans-serif;
 		box-shadow:0 0 13px rgba(0,0,0,0.4);
 		z-index:20;
 		padding:30px;
@@ -194,9 +200,12 @@ html{
 		margin:0 auto;
 		transition:400ms;
 	}
+	footer{
+		background:#19202a;
+		padding:20px;
+	}
 	.footer--span-author
 	{
-		
 		font-size:2.34rem;
 	}
 	.Links
@@ -225,6 +234,85 @@ html{
 	}
 	.Links a:hover{
 		transform:scale(1.3);
+	}
+	.Session_album_div
+	{
+		margin:0;
+		padding:0;
+		height:55vh;
+	}
+	.Session_album--img
+	{
+		width:100%;
+		height:100%;
+		position: absolute;
+		z-index: -1;
+		background-size: cover!important;
+		background-position: center!important;
+		box-shadow:inset 0 0 6px black;
+		filter:contrast(120%) grayscale(40%);
+		transition: 250ms;
+	}
+	.Session_album_div:hover .Session_album--img
+	{
+		filter:contrast(100%) grayscale(0);
+	}
+	.Sessions_album_information-date
+	{
+		opacity: 0;
+		padding:5px;
+		font-family: lato;
+		transition:250ms;
+	}
+	.Session_album_div:hover .Sessions_album_information-date
+	{
+		opacity:1;
+	}
+	.Session-introduction
+	{
+		height:34vh;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.Session-introduction::after{
+		content:'';
+		display:block;
+		position: absolute;
+		background: url("../img/introduction.jpg");
+		width:100%;
+		z-index:-1;
+		background-size:cover;
+		background-position: center;
+		box-shadow:0 -3px 13px rgba(0,0,0,0.3);
+		filter: brightness(70%) contrast(160%) blur(2px);
+		height:34vh;
+	}
+	.Menu
+	{
+		font-size:2.4rem;
+		font-family: 'Oswald', sans-serif;
+		background-color:rgba(0,0,0,0.6);
+	}
+	Menu__nav--a-logo
+	{
+		font-size:2.4rem!important;
+	}
+	.Sessions_album_information
+	{
+		height:53vh;
+		display:flex;
+		z-index:20;
+		align-items: flex-end;
+	}
+	.Sessions_album_information-date
+	{
+		color:white;
+		font-size:1.6rem;
+		text-shadow:0 3px 6px black;
+	}
+	.Link--i-user {
+		color: rgb(180, 180, 176);
 	}
 	@media screen and (max-width:715px){
 		.MainSlogan
